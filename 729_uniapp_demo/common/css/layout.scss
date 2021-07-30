@@ -1,0 +1,64 @@
+
+
+// 定义flex等分
+@for $i from 0 through 12 {
+  .f#{$i},
+  .flex#{$i} {
+    flex: $i;
+  }
+}
+
+
+
+
+.gr-yc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.gr-xc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gr-xyc{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gr-xbetween {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gr-xaround {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+//绝对定位 垂直居中
+.absolutecolcenter,
+.gr-yc-ab {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+//绝对定位 水平居中
+.absoluterowcenter,
+.gr-xc-ab {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+//绝对定位 垂直水平居中
+.absolutecenter,
+.gr-xyc-ab {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
