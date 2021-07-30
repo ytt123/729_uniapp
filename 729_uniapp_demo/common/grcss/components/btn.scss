@@ -1,0 +1,10 @@
+.gr-btn{
+	 @extend .gr-xyc;
+	 @extend .gr-r#{20};
+	 @extend .gr-bh#{40};
+	 @extend .gr-fontm#{14};
+     width: calc(100% - 32px); 
+	 color: $gr-color-btn-main;
+	 background-color: $gr-color-btnbg-main;
+}
+

@@ -14,13 +14,12 @@
 
 /* 颜色变量 */
 
-// add
-$gr-color-main:#f00;
+
+
 
 // add gr-scss
-@import '@/common/css';
-
 $imageurl:"http://e.hiphotos.baidu.com/image/pic/item/a1ec08fa513d2697e542494057fbb2fb4316d81e.jpg";
+@import '@/common/grcss';
 
 //以下保留
 /* 行为相关颜色 */

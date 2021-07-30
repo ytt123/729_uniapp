@@ -1,5 +1,4 @@
 
-
 // 定义flex等分
 @for $i from 0 through 12 {
   .f#{$i},
@@ -8,9 +7,16 @@
   }
 }
 
+.gr-x {
+  display: flex;
+  flex-direction: row;
 
+}
+.gr-y {
+  display: flex;
+  flex-direction: column;
 
-
+}
 .gr-yc {
   display: flex;
   flex-direction: column;
@@ -30,14 +36,30 @@
 .gr-xbetween {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .gr-xaround {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 
 }
 
+.gr-ybetween {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gr-yaround {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+}
 //绝对定位 垂直居中
 .absolutecolcenter,
 .gr-yc-ab {

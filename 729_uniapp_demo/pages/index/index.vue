@@ -1,22 +1,19 @@
 <template>
 	<view class="content">
-		<image class="logo" src="/static/logo.png"></image>
-		<view class="text-area ">
-			<text class="title">{{title}}</text>
-			<text class="gr-font13">{{title}}</text>
-
-			<text class="ftm60">123123</text>
-
-
-			<view class="gr-xyc itme">
-				<text class="gr-font40">123123</text>
+		<!-- <image class="logo" src="/static/logo.png"></image> -->
+		<view class="gr-y">
+			<view class="gr-b100 gr-xyc gr-m10">
+				<text class="gr-fontm20">1111</text>
 			</view>
-			<view class="gr-xyc itme">
-				<text class="gr-font13">123123</text>
+			<view class="gr-b100 gr-p10 gr-br10">
+				<text class="gr-font20">222</text>
 			</view>
-
-
-
+		
+			<view class="gr-btn">
+				<view>123123123</view>
+			</view>
+			
+			
 		</view>
 	</view>
 </template>
@@ -38,17 +35,22 @@
 </script>
 
 <style lang="scss">
+	.title {
+		font-size: 40rpx;
+		// color: $gr-color-main
+	}
 	.itme {
 		height: 200rpx;
 		width: 200rpx;
 		background-color: #4CD964;
+		
 	}
 
 	.content {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
+		// display: flex;
+		// flex-direction: column;
+		// align-items: center;
+		// justify-content: center;
 	}
 
 	.logo {
@@ -65,8 +67,5 @@
 		justify-content: center;
 	}
 
-	.title {
-		font-size: 36rpx;
-		color: $gr-color-main
-	}
+	
 </style>

@@ -1,0 +1,66 @@
+.gr-font13{
+	font-size: 36rpx;
+	// color: #007AFF;
+	font-family: PingFangSC-Medium, sans-serif;//苹方-简 中黑体
+	color: $gr-color-text-main;
+		
+}
+
+// 定义字体(px)单位，小于20都为px单位字体
+@for $i from 9 to 20 {
+ .gr-font#{$i} {
+    font-size: $i + px;
+ 	font-family: PingFangSC-Regular, sans-serif;//苹方-简 中黑体
+	// color: $gr-color-text-main;
+
+ }
+ @each $short, $long in l light, r regular, m medium {
+ 	.gr-font#{$short}#{$i},
+ 	.gr-font#{$long}#{$i} {
+      font-family: PingFangSC-#{$long}, sans-serif;//苹方-简 中黑体
+ 	   font-size: $i + px;
+	   	 // color: $gr-color-text-main;
+    }
+ }
+}
+
+// 定义字体(rpx)单位，大于或等于20的都为rpx单位字体
+@for $i from 20 through 50 {
+  .gr-font#{$i} {
+     font-size: 2*$i + rpx;
+  	 font-family: PingFangSC-Regular, sans-serif;//苹方-简 中黑体
+  }
+  @each $short, $long in l light, r regular, m medium {
+  	.gr-font#{$short}#{$i},
+  	.gr-font#{$long}#{$i} {
+       font-family: PingFangSC-#{$long}, sans-serif;//苹方-简 中黑体
+  	   font-size: 2*$i + rpx;
+     }
+  }
+}
+
+
+//定义行数
+@for $i from 1 through 3 {
+
+  .gr-font-line#{$i} {
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: $i;
+   -webkit-box-orient: vertical;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,88 @@
+//border : gr-borderleft1  gr-bl1 
+@for $i from 0 through 10 {
+	.gr-b#{$i},
+	.gr-border#{$i} {
+	   border: $i + px solid $gr-color-line-main;  
+	   
+	}
+  @each $short, $long in l left, t top, r right, b bottom {
+	.gr-b#{$short}#{$i},
+	.gr-border#{$long}#{$i} {
+       border-#{$long}: $i + px solid $gr-color-line-main;  
+	   
+	  
+	}
+  }
+}
+
+// margin : gr-m10
+
+@for $i from 0 to 300 {
+	.gr-m#{$i} {
+	  margin: $i + px;
+	}
+	.gr-mh#{$i} {
+		 margin-left: $i + px;
+		 margin-right: $i + px;
+	}
+	.gr-mv#{$i} {
+	  margin-top: $i + px;
+	  margin-bottom: $i + px;
+	}
+	@each $short, $long in l left, t top, r right, b bottom {
+		.gr-m#{$short}#{$i},
+		.gr-margin#{$long}#{$i} {
+	     margin-#{$long}: $i + px  
+	    }
+   }
+} 
+ // padding :gr-paddingl10  gr-p10
+
+@for $i from 0 to 300 {
+  .gr-p#{$i} {
+    padding: $i + px;
+  }
+  .gr-ph#{$i} {
+    padding-top: $i + px;
+	padding-bottom: $i + px;
+  }
+  .gr-pv#{$i} {
+    padding-left: $i + px;
+	padding-right: $i + px;
+  }
+	@each $short, $long in l left, t top, r right, b bottom {
+		.gr-p#{$short}#{$i},
+		.gr-padding#{$long}#{$i} {
+	 	 padding-#{$long}: $i + px  
+      	}
+	}
+}
+
+//width height : gr-bh10  gr-boundheight10
+
+@for $i from 1 through 800 {
+	.gr-b#{$i},
+	.gr-bound#{$i} {
+	   width: 2*$i + rpx ;
+	   height: 2*$i + rpx;
+	   background-color: $gr-color-view-main;
+	}
+  @each $short, $long in h height, w width {
+	.gr-b#{$short}#{$i},
+	.gr-bound#{$long}#{$i} {
+       #{$long}: 2*$i + rpx ;
+	}
+   }
+}
+
+
+
+@for $i from 3 through 30 {
+	.gr-r#{$i},
+	.gr-radius#{$i} {
+	   border-radius: $i + px ;
+	}
+}
+
+
+
